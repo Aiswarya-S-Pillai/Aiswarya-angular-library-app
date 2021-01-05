@@ -1,0 +1,32 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+<nav class="navbar navbar-expand-lg ">
+ 
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   
+    <ul class="navbar-nav navbar-right">
+      
+      <a class="nav-link"  routerLink="/login" *ngIf="!_auth.loggedIn()" routerLinkActive="active">Login</a>
+      <a class="nav-link"  routerLink="/signup" *ngIf="!_auth.loggedIn()" routerLinkActive="active">SignUp</a>
+      
+      
+      <a class="nav-link"   routerLink="products">Books</a>
+      <a class="nav-link" style="cursor:pointer" *ngIf="_auth.loggedIn()" (click)="loggedUser()">Add Book</a>
+      <a class="nav-link"  routerLink="authors">Authors</a>
+      <a class="nav-link"  *ngIf="_auth.loggedIn()" routerLink="addauthor">Add Author</a>
+     
+      <a class="nav-link" style="cursor:pointer" *ngIf="_auth.loggedIn()" (click)="logoutUser()">Logout</a>
+    </ul>
+  </div>
+</nav>    
+
+<div style="text-align:center"class="h">
+  <h1 style="color: black">
+    Welcome to {{ title }}
+  </h1>
+</div>
+<div class="container">
+  <router-outlet></router-outlet>            
+</div>

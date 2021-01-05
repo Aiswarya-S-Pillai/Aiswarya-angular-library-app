@@ -1,0 +1,33 @@
+thead{
+    color:#337AB7
+}
+
+
+li { text-align: left; }
+
+
+.label-float{
+    margin:0 auto;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width:100%;
+    opacity:.9;
+    padding:6px;
+    color:#fff;
+  }
+  
+
+.move{ 
+    margin-left:90px;
+    margin-top:0px;
+}
+
+   
+.btn-twitter {background-color:#4099FF;color:#fff;}
+.btn-facebook {background-color:#3B5998;color:#fff;}
+.btn-google-plus {background-color:#d34836;color:#fff;}
+
+.btn-twitter:hover {background-color:#3088FF;color:#62BBFF;}
+.btn-facebook:hover {background-color:#2A4998;color:#4C6BBA;}
+.btn-google-plus:hover {background-color:#C23836;color:#E45A58;}

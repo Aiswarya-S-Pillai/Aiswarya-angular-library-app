@@ -1,0 +1,18 @@
+.h{
+    background-color: rgb(240, 75, 103);
+    padding:20px;
+}
+.navbar{
+    background-color: #111166;
+}
+.nav-link{
+    color: white;
+    font-weight: 500;
+    margin-left:40px;
+
+}
+h1{
+    font-style: bold;
+    font-weight: 500;
+    font-family:'Courier New', Courier, monospace
+}
